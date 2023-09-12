@@ -9,7 +9,7 @@
 #include <fcntl.h>
 #include <string.h>
 // when piping the parent is writing into the pipe whereas the child is reading
-//QUESTION 3:I think there is so many variations of exec, due to different privileges and parameters to run different file types
+//QUESTION 4:I think there is so many variations of exec, due to different privileges and parameters to run different file types
 //Which have varying data inputs and outputs. This gives the OS a sense of modularity and makes it easier to exec what you want
 //Lighteningi the load on the programmer and user 
 
