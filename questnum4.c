@@ -16,8 +16,8 @@
 int main(int argc, char *argv[]){
 printf("hello world (pid:%d)\n", (int) getpid());
 //char *path="/bin/ls";
-char *arg1="-lh";
-char *arg2="/home";
+//char *arg1="-lh";
+//char *arg2="/home";
 int rc=fork(); //with  child created, consider using pipe() to the child..maybe use the wait call?
 if(rc<0){
 //fork failure, point and laugh!
@@ -30,7 +30,7 @@ printf("We are currently in child");
 char *path="/bin/ls";
 char *arg1="-lh";
 char *arg2="/home";
-int execl(path,arg1,arg2,NULL);
+execl(path,path,arg1,arg2,NULL);
 }
 
 else{ //parent goes here, should run only after child changes num1
