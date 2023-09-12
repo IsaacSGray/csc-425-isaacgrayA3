@@ -10,7 +10,8 @@
 #include <string.h>
 // when piping the parent is writing into the pipe whereas the child is reading
 //QUESTION 5:Wait returns 0 and executes the child program, or if its negative it will result in a failed fork,
-//If wait returns positive, it is the parent process! This is the process ID, PID. 
+//If wait returns positive, it is the parent process! This is the process ID, PID. If I pause the 
+//The wait function in the child function would have the child wait and send it back to the parent to execute
 
 int main(int argc, char *argv[]){
 printf("hello world (pid:%d)\n", (int) getpid());
