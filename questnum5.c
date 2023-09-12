@@ -24,11 +24,11 @@ exit(1);
 else if(rc==0){
 //child created, access value here NOW
 printf("We are currently in child");
-int execl(path,arg1,arg2,NULL);
 }
 
 else{ //parent goes here, should run only after child changes num1
 int rc_wait=wait(NULL);
+printf("Here is what wait prints:%d",rc_wait);
 printf("We are returned to parent");
 
 printf("hello, I am parent of %d (rc_wait:%d) (pid:%d)\n",rc, rc_wait, (int) getpid());
